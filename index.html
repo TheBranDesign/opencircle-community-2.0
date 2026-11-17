@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#090713">
+<title>Desires &amp; Pleasures DP | Community</title>
+<style>
+:root{--bg:#090713;--panel:#151124;--panel2:#1d1730;--line:rgba(255,255,255,.1);--muted:#aaa2bd;--white:#fff;--pink:#ff39bd;--purple:#a855f7;--blue:#20c8ff;--yellow:#ffd447;--green:#69f3ad;--radius:22px;--shadow:0 18px 55px rgba(0,0,0,.38)}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#080610;color:var(--white);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}body{min-height:100vh;display:grid;place-items:center;padding:24px;background:radial-gradient(ellipse at 15% 15%,rgba(255,57,189,.17),transparent 34%),radial-gradient(ellipse at 85% 78%,rgba(32,200,255,.13),transparent 34%),#080610}
+button,input,select,textarea{font:inherit}button{cursor:pointer}.stage{width:min(100%,430px);height:min(900px,calc(100dvh - 48px));min-height:650px;position:relative;border:8px solid #282333;border-radius:42px;background:var(--bg);overflow:hidden;box-shadow:0 30px 100px #000b,0 0 0 1px #ffffff16;isolation:isolate}.stage:before{content:"";position:absolute;inset:0 0 auto;height:2px;background:linear-gradient(90deg,var(--pink),var(--yellow),var(--blue));z-index:5}.app{height:100%;display:flex;flex-direction:column;background:radial-gradient(ellipse at 50% -15%,rgba(168,85,247,.14),transparent 50%),var(--bg)}.topbar{height:66px;flex:none;display:flex;align-items:center;justify-content:space-between;padding:0 20px;border-bottom:1px solid var(--line);background:#0b0814e8;backdrop-filter:blur(16px);z-index:3}.brand{display:flex;align-items:center;gap:10px;min-width:0}.brand-mark{width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,var(--pink),#7d42ff 55%,var(--blue));display:grid;place-items:center;box-shadow:0 0 20px #e83dbd55;font-weight:900}.brand-name{font-size:12px;line-height:1.15;font-weight:850;letter-spacing:.08em;text-transform:uppercase}.brand-name span{display:block;color:#d8c9ff;font-size:9px;letter-spacing:.2em;margin-top:3px}.icon-btn{width:38px;height:38px;border:1px solid var(--line);border-radius:13px;background:#ffffff08;color:white;display:grid;place-items:center;font-size:17px}.screen{display:none;flex:1;overflow:auto;padding:22px 18px 28px;scrollbar-width:thin;scrollbar-color:#49365f transparent;animation:enter .24s ease}.screen.active{display:block}@keyframes enter{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}.bottomnav{height:72px;flex:none;display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line);background:#0e0a19f5;backdrop-filter:blur(18px);padding:7px 5px max(7px,env(safe-area-inset-bottom));z-index:4}.navitem{border:0;background:none;color:#8f879f;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font-size:10px;font-weight:650}.navitem .ico{font-size:19px;line-height:1}.navitem.active{color:#fff}.navitem.active .ico{filter:drop-shadow(0 0 8px var(--pink));color:var(--pink)}.eyebrow{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#d9aaff;font-weight:800}.h1{font-size:29px;line-height:1.08;letter-spacing:-.04em;margin:9px 0 10px;font-weight:850}.gradient-text{background:linear-gradient(95deg,#ff79d5,#b88cff 48%,#55dfff);-webkit-background-clip:text;background-clip:text;color:transparent}.sub{color:var(--muted);font-size:13px;line-height:1.6;margin:0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:25px 0 13px}.section-head h2{font-size:17px;margin:0;letter-spacing:-.02em}.text-btn{border:0;background:none;color:#f08cde;font-size:12px;font-weight:750;padding:5px}.hero{position:relative;overflow:hidden;border:1px solid #ff65d044;border-radius:26px;padding:22px 19px;background:radial-gradient(circle at 100% 0%,#b83aff66,transparent 45%),linear-gradient(135deg,#281139,#17102b 58%,#0c2131);box-shadow:0 12px 40px #0005}.hero:after{content:"";position:absolute;width:190px;height:190px;border:1px solid #ff8de833;border-radius:50%;right:-75px;top:-80px;box-shadow:0 0 0 18px #ff8de80b,0 0 0 38px #ff8de808}.hero h1{font-size:30px;line-height:1.03;max-width:280px;margin:11px 0}.hero p{max-width:275px;color:#d6c8e6;font-size:12px;line-height:1.55}.hero .btn{margin-top:14px}.pill{display:inline-flex;align-items:center;gap:6px;border:1px solid #ffffff20;background:#ffffff0b;border-radius:99px;padding:7px 10px;color:#f7e9ff;font-size:10px;font-weight:750}.pill .dot{width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 9px var(--green)}.btn{border:0;border-radius:14px;padding:13px 16px;font-size:12px;font-weight:800;color:#180c20;background:linear-gradient(100deg,#ff77d4,#bd7aff 55%,#6de2ff);box-shadow:0 8px 24px #dc55c333;transition:transform .18s,filter .18s}.btn:active{transform:scale(.97)}.btn.secondary{background:#ffffff0c;color:#fff;border:1px solid #ffffff22;box-shadow:none}.btn.outline{background:transparent;color:#f2d5ff;border:1px solid #b96aff66;box-shadow:none}.btn.full{width:100%}.btn.small{padding:9px 12px;font-size:11px;border-radius:11px}.card{border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(145deg,#1b152b,#120e1e);padding:16px;box-shadow:var(--shadow)}.event-art{height:142px;border-radius:17px;overflow:hidden;position:relative;background:radial-gradient(circle at 20% 25%,#ff59bf,transparent 28%),radial-gradient(circle at 80% 20%,#20c8ff99,transparent 32%),linear-gradient(135deg,#28123c,#10142b 70%);display:flex;align-items:end;padding:15px}.event-art:before,.event-art:after{content:"";position:absolute;border:1px solid #ffffff24;border-radius:50%;width:190px;height:190px;right:-25px;top:-75px;box-shadow:0 0 0 20px #ffffff08,0 0 0 40px #ffffff06}.event-art:after{width:95px;height:95px;right:42px;top:20px;border-color:#ffb5e977}.art-title{position:relative;z-index:1;font-size:21px;font-weight:900;line-height:1;text-shadow:0 3px 18px #000}.art-title small{display:block;font-size:9px;letter-spacing:.2em;color:#ffb5e9;margin-bottom:8px}.event-meta{display:flex;gap:9px;flex-wrap:wrap;color:#bdb3cc;font-size:10px;margin:12px 0}.event-meta span{display:flex;gap:5px;align-items:center}.event-card h3{font-size:17px;margin:13px 0 5px}.event-card p{font-size:11px;color:var(--muted);line-height:1.5;margin:0}.event-card .actions{display:flex;gap:8px;margin-top:14px}.event-card .actions button{flex:1}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.stat{padding:14px;border-radius:17px;background:#ffffff08;border:1px solid var(--line)}.stat strong{display:block;font-size:19px;color:#fff}.stat span{font-size:10px;color:var(--muted)}.notice{border:1px solid #ffd44745;background:#ffd4470d;border-radius:15px;padding:12px;color:#f8e8a6;font-size:11px;line-height:1.5}.announcement{display:flex;gap:11px;padding:13px 0;border-bottom:1px solid var(--line)}.announcement:last-child{border:0}.ann-icon{width:34px;height:34px;flex:none;border-radius:11px;background:#a855f726;display:grid;place-items:center}.announcement b{font-size:12px}.announcement p{font-size:11px;color:var(--muted);margin:4px 0 0;line-height:1.5}.filters{display:flex;gap:7px;overflow:auto;padding:2px 0 10px;scrollbar-width:none}.filter{white-space:nowrap;border:1px solid var(--line);border-radius:99px;background:#ffffff08;color:#c9c0d5;padding:8px 12px;font-size:10px;font-weight:750}.filter.active{background:#e84cba22;border-color:#f36cc8;color:#fff}.event-list{display:grid;gap:12px}.event-list .event-art{height:120px}.event-list .event-card{padding:12px}.event-list .event-card h3{margin-top:10px}.detail-banner{height:180px;border-radius:22px;background:radial-gradient(circle at 25% 25%,#ff5fc4,transparent 30%),radial-gradient(circle at 80% 70%,#21cfff,transparent 35%),linear-gradient(130deg,#241035,#0b172c);display:flex;align-items:end;padding:18px;position:relative;overflow:hidden}.detail-banner:after{content:"DP";position:absolute;right:10px;top:5px;font-size:100px;font-weight:950;color:#ffffff0c}.detail-banner h2{font-size:26px;line-height:1;margin:0;z-index:1}.detail-block{margin-top:18px}.detail-block h3{font-size:14px;margin:0 0 9px}.detail-block p,.detail-block li{font-size:12px;line-height:1.6;color:#c4bbd0}.detail-block ul{padding-left:18px;margin:7px 0}.contribution{display:grid;gap:8px}.contrib-row{display:flex;justify-content:space-between;gap:10px;padding:11px 12px;border-radius:13px;background:#ffffff08;font-size:11px}.contrib-row strong{color:#ffe16a}.form{display:grid;gap:13px;margin-top:17px}.field label{display:block;font-size:11px;color:#d5c9e2;margin-bottom:6px;font-weight:700}.field input,.field select,.field textarea{width:100%;border:1px solid #ffffff1b;background:#100c1c;color:#fff;border-radius:12px;padding:12px;outline:none;font-size:12px}.field input:focus,.field select:focus{border-color:#e66bc8;box-shadow:0 0 0 3px #e66bc81c}.field option{background:#100c1c}.field small{display:block;color:#968ba7;font-size:10px;margin-top:5px}.success{text-align:center;padding:32px 15px}.success .check{width:65px;height:65px;border-radius:50%;margin:0 auto 17px;display:grid;place-items:center;background:#56e6a51b;border:1px solid #56e6a566;color:#69f3ad;font-size:29px}.guideline{display:flex;gap:10px;padding:12px 0;border-bottom:1px solid var(--line)}.guideline:last-child{border:0}.guideline i{font-style:normal;color:#ff9cde;font-size:17px}.guideline b{font-size:12px}.guideline p{font-size:10px;color:var(--muted);margin:3px 0 0;line-height:1.5}.member{display:flex;align-items:center;gap:11px;padding:12px;border-radius:15px;background:#ffffff08;border:1px solid var(--line)}.avatar{width:40px;height:40px;border-radius:14px;background:linear-gradient(135deg,#ff6bc7,#7656ee);display:grid;place-items:center;font-weight:850}.member b{font-size:12px}.member small{display:block;color:var(--muted);font-size:10px;margin-top:3px}.connect-row{display:flex;align-items:center;gap:12px;padding:14px;margin-bottom:9px;text-decoration:none;color:white;border:1px solid var(--line);border-radius:16px;background:#ffffff08}.connect-icon{width:39px;height:39px;border-radius:13px;background:#a855f72b;display:grid;place-items:center;font-size:19px}.connect-row b{font-size:12px}.connect-row small{display:block;color:var(--muted);font-size:10px;margin-top:3px}.connect-row .arrow{margin-left:auto;color:#bca9d2}.profile-head{display:flex;align-items:center;gap:13px;padding:17px}.profile-avatar{width:54px;height:54px;border-radius:18px;background:linear-gradient(135deg,#ff54bc,#7a58ff);display:grid;place-items:center;font-size:22px;font-weight:900}.setting{display:flex;align-items:center;justify-content:space-between;padding:14px 0;border-bottom:1px solid var(--line);font-size:12px}.setting:last-child{border:0}.switch{width:38px;height:22px;border-radius:99px;border:0;background:#51465e;padding:3px}.switch:after{content:"";display:block;width:16px;height:16px;border-radius:50%;background:white;transition:transform .2s}.switch.on{background:#bd55d5}.switch.on:after{transform:translateX(16px)}.toast{position:absolute;left:50%;bottom:84px;transform:translate(-50%,15px);opacity:0;pointer-events:none;background:#f8eaff;color:#21112d;padding:11px 15px;border-radius:13px;font-size:11px;font-weight:800;box-shadow:0 10px 30px #0008;transition:.25s;z-index:10;width:max-content;max-width:85%;text-align:center}.toast.show{opacity:1;transform:translate(-50%,0)}.modal-backdrop{position:absolute;inset:0;background:#05030bd9;display:none;align-items:center;justify-content:center;padding:20px;z-index:20;backdrop-filter:blur(9px)}.modal-backdrop.show{display:flex}.modal{width:100%;max-width:340px;border:1px solid #ffffff24;border-radius:24px;background:#171124;padding:22px;box-shadow:0 20px 70px #000}.modal h2{font-size:21px;margin:8px 0}.modal p{font-size:12px;line-height:1.6;color:#c4bbd0}.modal-actions{display:flex;gap:8px;margin-top:18px}.modal-actions button{flex:1}.welcome{position:absolute;inset:0;z-index:15;background:radial-gradient(circle at 50% 15%,#a63cd74a,transparent 40%),radial-gradient(circle at 0% 80%,#ff36ae24,transparent 38%),#090713;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px;text-align:center}.welcome.hidden{display:none}.welcome-logo{width:88px;height:88px;border-radius:29px;background:linear-gradient(135deg,#ff47bc,#9c4cff 55%,#26cfff);display:grid;place-items:center;font-size:31px;font-weight:950;box-shadow:0 0 55px #e746c866;margin-bottom:23px}.welcome h1{font-size:34px;line-height:1.02;letter-spacing:-.04em;margin:0 0 12px}.welcome p{font-size:12px;color:#c8bdd8;line-height:1.6;max-width:300px}.rainbow{height:3px;width:145px;border-radius:9px;background:linear-gradient(90deg,#ff3dbe,#ffcf3f,#65ed88,#23c8ff,#a855f7);margin:22px 0}.age-check{display:flex;align-items:flex-start;gap:9px;text-align:left;font-size:10px;color:#d0c5dc;line-height:1.5;margin:17px 0}.age-check input{accent-color:#e75ec7;margin-top:2px}.welcome .btn{width:100%;max-width:290px}.welcome .fine{font-size:9px;color:#837991;margin-top:14px}.hidden-screen{display:none!important}.footer-note{text-align:center;font-size:9px;color:#776d86;padding:16px 0 2px}
+@media(max-width:600px){body{display:block;padding:0;background:var(--bg)}.stage{width:100%;height:100dvh;min-height:0;border:0;border-radius:0;box-shadow:none}.stage:before{height:2px}.screen{padding:20px 17px 24px}.topbar{padding:0 17px}.bottomnav{height:75px}}
+@media(max-height:700px) and (min-width:601px){.stage{height:calc(100dvh - 24px);min-height:0}.screen{padding-top:15px}.hero{padding:17px}}
+</style>
+</head>
+<body>
+<div class="stage">
+ <div class="app">
+  <header class="topbar">
+   <div class="brand"><div class="brand-mark">DP</div><div class="brand-name">Desires &amp; Pleasures DP<span>Love · Respect · Inclusion</span></div></div>
+   <button class="icon-btn" id="noticeBtn" aria-label="Notifications" title="Notifications">♧</button>
+  </header>
+  <main id="home" class="screen active">
+   <div class="eyebrow">A welcoming adults community</div>
+   <h1 class="h1">Welcome to your<br><span class="gradient-text">space to connect.</span></h1>
+   <p class="sub">A community built around open-minded connection, respect, and good energy.</p>
+   <div class="hero" style="margin-top:19px">
+    <span class="pill"><i class="dot"></i> FEATURED GATHERING · DEMO</span>
+    <h1>Connect. Vibe.<br>Have a great time.</h1>
+    <p>Explore the community’s event experience and see what’s coming up. Event date, time, and venue are confirmed directly by the organizer.</p>
+    <button class="btn" onclick="openEvent('welcome')">Explore featured event&nbsp; →</button>
+   </div>
+   <div class="section-head"><h2>Community at a glance</h2><span class="eyebrow">18+ only</span></div>
+   <div class="grid2"><div class="stat"><strong>Respect</strong><span>Every person, every boundary</span></div><div class="stat"><strong>Inclusion</strong><span>Welcoming, open-minded space</span></div></div>
+   <div class="section-head"><h2>Latest announcements</h2><button class="text-btn" onclick="showToast('You are viewing sample announcements.')">View all</button></div>
+   <div class="card">
+    <div class="announcement"><div class="ann-icon">✦</div><div><b>Welcome to the DP community</b><p>Bring kindness, communicate clearly, and make room for everyone to feel comfortable.</p></div></div>
+    <div class="announcement"><div class="ann-icon">♡</div><div><b>Event details are organizer-confirmed</b><p>Dates, times, venue information, and participation details will be shared once confirmed.</p></div></div>
+   </div>
+   <div class="section-head"><h2>Want to reach Marilyn?</h2></div>
+   <div class="card" style="display:flex;align-items:center;justify-content:space-between;gap:12px"><div><b style="font-size:13px">Let’s connect</b><p class="sub" style="font-size:10px;margin-top:4px">Contact the organizer directly.</p></div><button class="btn small" onclick="navigate('connect')">Connect →</button></div>
+   <div class="footer-note">Prototype experience · Not a live booking platform</div>
+  </main>
+
+  <main id="events" class="screen">
+   <div class="eyebrow">Find your next gathering</div><h1 class="h1">Discover <span class="gradient-text">events</span></h1>
+   <p class="sub">Explore sample event experiences. Confirmed schedules and venue details will be shared by the organizer.</p>
+   <div class="filters" style="margin-top:18px">
+    <button class="filter active" data-filter="All" onclick="filterEvents('All',this)">All</button>
+    <button class="filter" data-filter="Social" onclick="filterEvents('Social',this)">Social</button>
+    <button class="filter" data-filter="Community" onclick="filterEvents('Community',this)">Community</button>
+    <button class="filter" data-filter="Meet & Greet" onclick="filterEvents('Meet & Greet',this)">Meet &amp; Greet</button>
+   </div>
+   <div id="eventList" class="event-list"></div>
+   <div class="notice" style="margin-top:14px">Sample listings are for demonstration only. No event date, start time, or venue was provided in the client flyer.</div>
+  </main>
+
+  <main id="detail" class="screen">
+   <button class="text-btn" onclick="goBack()">← Back to events</button>
+   <div class="detail-banner" style="margin-top:12px"><h2 id="detailTitle">The DP Social</h2></div>
+   <div class="event-meta"><span>◷ Date &amp; time: To be confirmed</span><span>⌖ Venue: Shared by organizer</span></div>
+   <p class="sub" id="detailDescription">A welcoming opportunity to meet, connect, and enjoy a respectful community atmosphere.</p>
+   <div class="detail-block"><h3>Contribution information</h3><div class="contribution">
+    <div class="contrib-row"><span>Couples &amp; single ladies</span><strong>Free*</strong></div>
+    <div class="contrib-row"><span>Single men</span><strong>$60 donation*</strong></div>
+    <div class="contrib-row"><span>RSVP / prepay offer</span><strong>Save $20*</strong></div>
+    <div class="contrib-row"><span>Other advertised categories</span><strong>Confirm with host*</strong></div>
+   </div><p style="font-size:10px;color:#a89bb7">*These terms are transcribed from the supplied flyer and are provisional. Eligibility wording, contribution amounts, and any discount must be confirmed by Marilyn before publication.</p></div>
+   <div class="detail-block"><h3>Before you attend</h3><ul><li>Adults 18+ only.</li><li>Respect boundaries and ask for clear consent.</li><li>Participation is always voluntary; no pressure or assumptions.</li><li>Follow the organizer’s confirmed event and venue rules.</li></ul></div>
+   <div class="grid2" style="margin-top:18px"><button class="btn" onclick="startRSVP()">RSVP · Demo</button><button class="btn secondary" onclick="navigate('connect')">Contact host</button></div>
+   <div class="footer-note">RSVP does not reserve a real place or process payment.</div>
+  </main>
+
+  <main id="rsvp" class="screen">
+   <button class="text-btn" onclick="goBack()">← Back</button>
+   <div id="rsvpFormWrap">
+    <div class="eyebrow" style="margin-top:13px">Your interest matters</div><h1 class="h1">Event <span class="gradient-text">RSVP</span></h1>
+    <p class="sub">This is a demonstration form. It does not send data to the organizer or create a booking.</p>
+    <form class="form" id="rsvpForm">
+     <div class="field"><label for="eventSelect">Select event</label><select id="eventSelect"><option>The DP Social — sample listing</option><option>Open-Minded Connections — sample listing</option></select></div>
+     <div class="field"><label for="attendee">Attendee category</label><select id="attendee" required><option value="">Choose a category</option><option>Couple</option><option>Single woman</option><option>Single man</option><option>Trans attendee</option><option>Cross-dresser</option><option>Prefer to discuss with host</option></select><small>Categories and contribution rules are provisional and need organizer approval.</small></div>
+     <div class="field"><label for="fullName">Your name</label><input id="fullName" autocomplete="name" required placeholder="Name"></div>
+     <div class="field"><label for="email">Email address</label><input id="email" type="email" autocomplete="email" required placeholder="you@example.com"></div>
+     <div class="field"><label for="count">Number of attendees</label><select id="count"><option>1</option><option>2</option><option>3</option><option>4</option></select></div>
+     <label class="age-check" style="margin:0"><input type="checkbox" id="consent" required><span>I confirm I am 18 or older and agree to respect consent, privacy, and community guidelines.</span></label>
+     <div class="notice">Demo only: no payment details are requested or accepted. No real RSVP is submitted.</div>
+     <button class="btn full" type="submit">Submit demo RSVP</button>
+    </form>
+   </div>
+   <div id="rsvpSuccess" class="success hidden-screen"><div class="check">✓</div><div class="eyebrow">Demo confirmation</div><h1 class="h1">Thanks for<br><span class="gradient-text">your interest!</span></h1><p class="sub">Your sample RSVP has been completed locally in this prototype. No booking was sent or saved.</p><button class="btn full" style="margin-top:22px" onclick="navigate('events')">Back to events</button></div>
+  </main>
+
+  <main id="community" class="screen">
+   <div class="eyebrow">More than an event</div><h1 class="h1">Our <span class="gradient-text">community</span></h1>
+   <p class="sub">Desires and Pleasures DP welcomes open-minded adults and values a space where people can connect with dignity.</p>
+   <div class="card" style="margin-top:18px"><div class="eyebrow">Our promise</div><h2 style="font-size:20px;margin:8px 0">Love. Respect. Inclusion.</h2><p class="sub">A positive community begins with communication, mutual respect, and clear boundaries.</p></div>
+   <div class="section-head"><h2>Community guidelines</h2></div>
+   <div class="card">
+    <div class="guideline"><i>♡</i><div><b>Consent comes first</b><p>Ask, listen, and respect every yes, no, and change of mind.</p></div></div>
+    <div class="guideline"><i>◈</i><div><b>Respect every identity</b><p>Use the names and language people ask you to use. No harassment or discrimination.</p></div></div>
+    <div class="guideline"><i>▣</i><div><b>Protect privacy</b><p>Do not share another person’s identity, images, or personal details without explicit permission.</p></div></div>
+    <div class="guideline"><i>✦</i><div><b>Keep it welcoming</b><p>No pressure, unwanted contact, intimidation, or judgment.</p></div></div>
+    <div class="guideline"><i>18+</i><div><b>Adults only</b><p>This community is intended exclusively for adults aged 18 and over.</p></div></div>
+   </div>
+   <div class="section-head"><h2>Community notes</h2></div>
+   <div class="card"><div class="announcement"><div class="ann-icon">✧</div><div><b>A reminder about boundaries</b><p>Check in with others and respect personal comfort levels throughout every interaction.</p></div></div><div class="announcement"><div class="ann-icon">🌈</div><div><b>Everyone deserves respect</b><p>Help make the space friendly, inclusive, and free from judgment.</p></div></div></div>
+   <div class="section-head"><h2>Meet the community · sample profiles</h2></div>
+   <div class="grid2"><div class="member"><div class="avatar">A</div><div><b>Alex &amp; Sam</b><small>Fictional sample couple</small></div></div><div class="member"><div class="avatar" style="background:linear-gradient(135deg,#27c8ff,#7656ee)">J</div><div><b>Jordan</b><small>Fictional sample member</small></div></div></div>
+   <div class="notice" style="margin-top:14px">Member cards are fictional UI examples. No member directory or messaging service is connected.</div>
+  </main>
+
+  <main id="connect" class="screen">
+   <div class="eyebrow">Stay in touch</div><h1 class="h1">Connect with <span class="gradient-text">DP</span></h1>
+   <p class="sub">For event details, contribution questions, and organizer updates, reach out directly.</p>
+   <div class="card" style="margin-top:18px;margin-bottom:16px"><div class="eyebrow">Organizer contact</div><h2 style="font-size:21px;margin:7px 0">Marilyn</h2><p class="sub">Desires and Pleasures DP</p><a class="connect-row" style="margin-top:15px" href="tel:+12136547811"><div class="connect-icon">☎</div><div><b>Call the organizer</b><small>213-654-7811</small></div><span class="arrow">↗</span></a>
+   <a class="connect-row" href="https://wa.me/12136547811" target="_blank" rel="noopener"><div class="connect-icon">◉</div><div><b>WhatsApp</b><small>Open chat using the flyer phone number</small></div><span class="arrow">↗</span></a></div>
+   <div class="section-head"><h2>Social channels</h2></div>
+   <div class="connect-row"><div class="connect-icon">◎</div><div><b>Instagram</b><small>Account link not provided by organizer</small></div><span class="pill">Coming soon</span></div>
+   <div class="connect-row"><div class="connect-icon">f</div><div><b>Facebook</b><small>Account link not provided by organizer</small></div><span class="pill">Coming soon</span></div>
+   <div class="connect-row"><div class="connect-icon">♪</div><div><b>Other social channels</b><small>To be added when official links are supplied</small></div><span class="pill">Coming soon</span></div>
+   <div class="notice" style="margin-top:16px">The phone number is taken from the flyer. WhatsApp availability on this number should be confirmed by the organizer.</div>
+  </main>
+
+  <main id="profile" class="screen">
+   <div class="eyebrow">Your space</div><h1 class="h1">My <span class="gradient-text">profile</span></h1>
+   <div class="card profile-head" style="margin-top:17px"><div class="profile-avatar">G</div><div><b style="font-size:14px">Guest Member</b><p class="sub" style="font-size:10px">Demo profile · Not signed in</p></div><button class="text-btn" style="margin-left:auto" onclick="editProfile()">Edit</button></div>
+   <div class="section-head"><h2>Preferences</h2></div>
+   <div class="card">
+    <div class="setting"><span>Event announcements</span><button class="switch on" aria-label="Toggle event announcements" onclick="toggleSwitch(this)"></button></div>
+    <div class="setting"><span>Community updates</span><button class="switch" aria-label="Toggle community updates" onclick="toggleSwitch(this)"></button></div>
+    <div class="setting"><span>Privacy-first profile</span><button class="switch on" aria-label="Toggle privacy setting" onclick="toggleSwitch(this)"></button></div>
+   </div>
+   <div class="section-head"><h2>Account &amp; safety</h2></div>
+   <div class="card">
+    <div class="setting" onclick="navigate('community')" style="cursor:pointer"><span>Community guidelines</span><span>›</span></div>
+    <div class="setting" onclick="showToast('Privacy controls are a prototype demonstration.')" style="cursor:pointer"><span>Privacy settings</span><span>›</span></div>
+    <div class="setting" onclick="showToast('You are using a guest demo profile.')" style="cursor:pointer"><span>Sign out demonstration</span><span>↗</span></div>
+   </div>
+   <div class="notice" style="margin-top:14px">Authentication, saved profiles, notification delivery, and account controls require a production backend.</div>
+  </main>
+  <nav class="bottomnav" aria-label="Main navigation">
+   <button class="navitem active" data-screen="home" onclick="navigate('home')"><span class="ico">⌂</span>Home</button>
+   <button class="navitem" data-screen="events" onclick="navigate('events')"><span class="ico">✧</span>Events</button>
+   <button class="navitem" data-screen="community" onclick="navigate('community')"><span class="ico">♡</span>Community</button>
+   <button class="navitem" data-screen="connect" onclick="navigate('connect')"><span class="ico">↗</span>Connect</button>
+   <button class="navitem" data-screen="profile" onclick="navigate('profile')"><span class="ico">◉</span>Profile</button>
+  </nav>
+ </div>
+ <section class="welcome" id="welcomeGate">
+  <div class="welcome-logo">DP</div><div class="eyebrow">Love · Respect · Inclusion</div>
+  <h1>Desires &amp;<br><span class="gradient-text">Pleasures DP</span></h1>
+  <p>An open-minded adults community for connection, shared experiences, and respectful gatherings.</p><div class="rainbow"></div>
+  <span class="pill">✦ A WELCOMING SPACE FOR ADULTS</span>
+  <label class="age-check"><input type="checkbox" id="ageConfirm"><span>I confirm that I am 18 years of age or older. I agree to respect consent, privacy, and the community guidelines.</span></label>
+  <button class="btn" onclick="enterCommunity()">Enter community&nbsp; →</button>
+  <div class="fine">By entering, you acknowledge this is an adults-only community experience.</div>
+ </section>
+ <div class="modal-backdrop" id="modal"><div class="modal"><div class="eyebrow">Profile preview</div><h2>Edit guest profile</h2><p>This prototype can preview a local profile edit. No account is created and nothing is saved to a server.</p><div class="field"><label for="editName">Display name</label><input id="editName" value="Guest Member"></div><div class="modal-actions"><button class="btn secondary" onclick="closeModal()">Cancel</button><button class="btn" onclick="saveProfile()">Preview save</button></div></div></div>
+ <div class="toast" id="toast"></div>
+</div>
+<script>
+const eventData=[
+ {id:'welcome',title:'The DP Social',category:'Social',desc:'A welcoming sample gathering inspired by the spirit of the Desires and Pleasures DP flyer. Meet, connect, and enjoy a respectful community atmosphere.'},
+ {id:'connections',title:'Open-Minded Connections',category:'Meet & Greet',desc:'A sample meet-and-greet concept focused on conversation, inclusion, and making new connections.'},
+ {id:'community',title:'Community Vibes',category:'Community',desc:'A sample community-focused gathering celebrating respect, friendship, and positive energy.'}
+];
+let currentScreen='home',previousScreen='events',activeEvent='welcome',toastTimer;
+function navigate(id){if(!document.getElementById(id))return;if(currentScreen==='detail'||currentScreen==='rsvp')previousScreen='events';currentScreen=id;document.querySelectorAll('.screen').forEach(s=>s.classList.toggle('active',s.id===id));document.querySelectorAll('.navitem').forEach(n=>n.classList.toggle('active',n.dataset.screen===id));document.querySelector('.screen.active').scrollTop=0;}
+function goBack(){navigate(previousScreen==='detail'?'events':previousScreen);}
+function enterCommunity(){if(!document.getElementById('ageConfirm').checked){showToast('Please confirm that you are 18 or older to continue.');return}document.getElementById('welcomeGate').classList.add('hidden');navigate('home');}
+function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.remove('show'),2600);}
+function openEvent(id){activeEvent=id;const ev=eventData.find(e=>e.id===id)||eventData[0];document.getElementById('detailTitle').textContent=ev.title;document.getElementById('detailDescription').textContent=ev.desc;previousScreen=currentScreen==='home'?'home':'events';navigate('detail');}
+function renderEvents(filter='All'){const list=document.getElementById('eventList');list.innerHTML='';eventData.filter(e=>filter==='All'||e.category===filter).forEach(e=>{const el=document.createElement('article');el.className='card event-card';el.innerHTML=`<div class="event-art"><div class="art-title"><small>DESIRES &amp; PLEASURES DP</small>${e.title}</div></div><div class="event-meta"><span>◷ Date: To be confirmed</span><span>⌖ Venue: Ask host</span><span>✧ ${e.category}</span></div><h3>${e.title}</h3><p>${e.desc}</p><div class="actions"><button class="btn small" onclick="openEvent('${e.id}')">View details</button><button class="btn secondary small" onclick="activeEvent='${e.id}';startRSVP()">RSVP</button></div>`;list.appendChild(el)});}
+function filterEvents(category,button){document.querySelectorAll('.filter').forEach(b=>b.classList.toggle('active',b===button));renderEvents(category);}
+function startRSVP(){previousScreen='detail';document.getElementById('rsvpFormWrap').classList.remove('hidden-screen');document.getElementById('rsvpSuccess').classList.add('hidden-screen');navigate('rsvp');}
+document.getElementById('rsvpForm').addEventListener('submit',e=>{e.preventDefault();const form=e.currentTarget;if(!form.reportValidity())return;document.getElementById('rsvpFormWrap').classList.add('hidden-screen');document.getElementById('rsvpSuccess').classList.remove('hidden-screen');document.getElementById('rsvpSuccess').scrollIntoView({block:'start'});});
+function toggleSwitch(el){el.classList.toggle('on');showToast('Preference changed for this demo session.');}
+function editProfile(){document.getElementById('editName').value='Guest Member';document.getElementById('modal').classList.add('show');}
+function closeModal(){document.getElementById('modal').classList.remove('show');}
+function saveProfile(){const name=document.getElementById('editName').value.trim();if(!name){showToast('Please enter a display name.');return}document.querySelector('.profile-head b').textContent=name;document.querySelector('.profile-avatar').textContent=name.charAt(0).toUpperCase();closeModal();showToast('Profile preview updated locally.');}
+document.getElementById('noticeBtn').addEventListener('click',()=>showToast('You’re all caught up. Sample notifications only.'));
+document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal();});
+renderEvents();
+</script>
+</body>
+</html>
